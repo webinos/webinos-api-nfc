@@ -1,5 +1,5 @@
 {
-  "name": "nfc"
+  "name": "webinos-api-nfc"
 , "publishConfig": { "tag": "alpha" }
 , "description": "NFC API"
 , "keywords": ["webinos", "NFC" , "API"]
