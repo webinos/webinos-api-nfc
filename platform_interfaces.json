@@ -1,0 +1,5 @@
+{
+  "android": {
+    "NfcAnodeModule": "org.webinos.android.impl.NfcAnodeModule"
+  }
+}
