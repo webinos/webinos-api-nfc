@@ -33,15 +33,18 @@
     }
 
     NfcModule = function(obj) {
-        this.base = WebinosService;
-        this.base(obj);
+        WebinosService.call(this, obj);
 
         this.listeners = {};
         
         this.currentTag = null;
     };
-
-    NfcModule.prototype = new WebinosService;
+    // Inherit all functions from WebinosService
+    NfcModule.prototype = Object.create(WebinosService.prototype);
+    // The following allows the 'instanceof' to work properly
+    NfcModule.prototype.constructor = NfcModule;
+    // Register to the service discovery
+    _webinos.registerServiceConstructor("http://webinos.org/api/nfc", NfcModule);
 
     NfcModule.prototype.bindService = function(bindCB, serviceId) {
         this.textRecord = textRecord;
