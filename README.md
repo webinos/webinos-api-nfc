@@ -2,7 +2,7 @@
 
 **Service Type**: http://webinos.org/api/nfc
 
-The main concept of nfc API is to !TODO!
+The main concept of nfc API is to provide access to the device's Near Field Communication (NFC) capabilities.
 
 
 ## Installation ##
